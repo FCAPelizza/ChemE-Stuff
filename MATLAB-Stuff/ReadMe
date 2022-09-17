@@ -1,9 +1,12 @@
 This directory is devoted only to the MATLAB functionn and files that I made and will make in the future, I hope you find them useful.
 
-Not all files have instructions on how to properly use them or have instructions in italian, but they are fairly straightforward, if I was able to made them with a very basic knowledge of MATLAB you, an individual which is probably more accustomed with MATLAB than me when I made them, should be able to figure out how they work.
+Not all files have instructions on how to properly use them or have instructions in italian, but they are fairly straightforward, 
+if I was able to made them with a very basic knowledge of MATLAB you, an individual which is probably more accustomed with MATLAB than me when I made them,
+should be able to figure out how they work.
 However I will try to provide instructions whenever I have the chance to, please email me at fcapelizza@gmail.com if you have any problems.
 
-When it comes to using classes with MATLAB it is very easy, you have to import it, this process is made incredibly easy if you have the class file (dark-orange colour) in the directiory you are working in, you have have to type an name and set said name as equal to the class that the m file defined.
+When it comes to using classes with MATLAB it is very easy, you have to import it, this process is made incredibly easy if you have the class file 
+(dark-orange colour) in the directiory you are working in, you have have to type an name and set said name as equal to the class that the m file defined.
 
 The .m file called class_use_example will provide you with an example of that.
 
