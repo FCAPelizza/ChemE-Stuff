@@ -3,7 +3,7 @@ This is a repository in which I will upload a number of files, MATLAB/Python/exc
 
 I hope you find them as useful as they were to me.
 
-For any code improvement and advices please email me at fcapelizza@gmail.com, I'm new to GitHub and your request may lay unseen for tons of time, so, until I become less shitty at this, please email me.
+For any code improvement and advices please email me at fcapelizza@gmail.com, I'm new to GitHub and your request may lay unseen for months, so, until I become less shitty at this, please email me.
 
 All the best with your present and future endeavours,
 
