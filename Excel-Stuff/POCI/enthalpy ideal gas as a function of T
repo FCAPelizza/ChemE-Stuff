@@ -1,0 +1,7 @@
+
+Function hT(delHo, T0, T, a, B, C, D)
+
+hT = delHo + (T - T0) * a + B / 2 * (T ^ (2) - T0 ^ (2)) + C / 3 * (T ^ (3) - T0 ^ (3)) + D / 4 * (T ^ (4) - T0 ^ (4))
+
+
+End Function
