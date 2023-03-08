@@ -1,0 +1,30 @@
+Function eqn_writer(aRange As Range, nuRange As Range, Keq As Double) As Double
+    Dim a() As Variant
+    Dim nu() As Variant
+    Dim num As Double
+    Dim den As Double
+    Dim i As Integer
+    Dim order As Double
+    Dim prod As Double
+    ' Convert the input ranges to arrays
+    a = aRange.Value
+    nu = nuRange.Value
+    
+    ' Calculate the product of a^nu
+    num = 1
+    den = 1
+    For i = LBound(a) To UBound(a)
+        If nu(i, 1) > 0 Then
+            num = num * (a(i, 1) ^ nu(i, 1))
+        ElseIf nu(i, 1) < 0 Then
+            den = den * (a(i, 1) ^ Abs(nu(i, 1)))
+        Else
+        End If
+    Next i
+    ' Return the result
+    
+    prod = Keq * den
+    order = Application.WorksheetFunction.Max(Application.WorksheetFunction.Log10(prod), Application.WorksheetFunction.Log10(num))
+    order = Application.WorksheetFunction.Floor(order, 1)
+    eqn_writer = (Keq * den - num) / (10 ^ order)
+End Function
