@@ -1,0 +1,13 @@
+Function phase_eq_writer(fugacityL As Double, fugacityV As Double) As Double
+' first input fugacity of liq, second input fugacity of vapour
+
+    Dim prod As Double
+    ' Convert the input ranges to arrays
+    ' first input liquid fugacity, second input
+    
+    prod = fugacityL
+    num = fugacityV
+    order = Application.WorksheetFunction.Max(Application.WorksheetFunction.Log10(Abs(prod)), Application.WorksheetFunction.Log10(Abs(num)))
+    order = Application.WorksheetFunction.Floor(order, 1)
+    phase_eq_writer = (prod - num) / (10 ^ order)
+End Function
