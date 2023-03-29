@@ -1,0 +1,10 @@
+this basically determines the specific molar enthalpy of an ideal liquid
+
+Function hTL(delHo, delHev, T0, Teb, T, A, B, C, D, cpL)
+
+hsgas = delHo + (Teb - T0) * A + B / 2 * (Teb ^ (2) - T0 ^ (2)) + C / 3 * (Teb ^ (3) - T0 ^ (3)) + D / 4 * (Teb ^ (4) - T0 ^ (4))
+
+hsliq = cpL * (T - Teb)
+hTL = hsgas + hsliq - delHev
+
+End Function
