@@ -1,0 +1,4 @@
+Function P0T(T, A, B, C)
+
+P0T = 10 ^ (A - B / (T + C))
+End Function
