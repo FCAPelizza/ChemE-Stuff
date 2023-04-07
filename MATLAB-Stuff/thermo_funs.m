@@ -70,7 +70,7 @@ classdef thermo_funs
             val_int = trapz(Xs,Ys);
             out = (delGo/(R*Tref) - val_int)*R*T;
         end
-
+%% BE AWARE, THE PERRY CORRELATION DOES NOT WORK IF THERE IS MORE THAN 1 T INTERVAL INVOLVED, I'LL CORRECT IT AS SOON AS POSSIBLE
         function output=delh(species,delHof,Tend,fcorr)
             % per dubbi/suggerimenti/bug mandatemi una mail a fcapelizza@gmail.com
             % fcorr è opzionale come input
